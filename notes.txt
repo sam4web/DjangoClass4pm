@@ -1,0 +1,18 @@
+python -m venv venv
+cd venv\Scripts
+activate
+cd ..\..
+pip install django
+
+django-admin startproject blog .
+python manage.py runserver
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+create folders named templates & static 
+html file -> templates folder
+other -> static folder
+
+python manage.py startapp home
